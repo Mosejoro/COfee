@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Parkinsans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Parkinsans -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="img/204696499.png" alt="" class="logo" />
+      <nav>
+        <ul class="navlinks">
+          <li class="items"><a href="#">Home</a></li>
+          <li class="items"><a href="#">Services</a></li>
+          <li class="items"><a href="#">Blog</a></li>
+          <li class="items"><a href="#">About Us</a></li>
+          <li>
+            <a href="#"><button>Contact Us</button></a>
+          </li>
+          <li class="on" onclick="showSidebar()">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+          </li>
+        </ul>
+        <ul class="sidebar">
+          <li onclick="closeSidebar()">
+            <a href="#"><ion-icon name="close-outline"></ion-icon></a>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header -->
+    <!-- Hero -->
+    <div class="Hero-mobile d-md-none p-2">
+      <h1 class="display-1">Freshly Roasted Coffee</h1>
+      <!-- <img src="img/70.jpg" alt="" /> -->
+      <div class="jk p-4 w-75"><button>Shop Now</button></div>
+    </div>
+    <div class="Hero-desktop d-md-flex gap-3 d-none p-5">
+      <h2>
+        Brewed to Perfection
+        <br />
+        <br />
+        Paired with Confection
+      </h1>
+      <div class="jk"><button>Shop Now</button></div>
+      <!-- <div class="desk-left d-flex flex-column gap-5"></div>
+      <img src="img/70.png" alt="" /> -->
+    </div>
+    <!-- Hero -->
+    <!-- Fresh -->
+    <div class="Fresh p-2">
+      <h2>Top Categories</h2>
+      <p class="text-center">Experience the delicious one's out there</p>
+      <div
+        class="categories d-flex flex-wrap gap-5 justify-md-content-between justify-content-center"
+      >
+        <div class="image-container-one h">
+          <div class="image-overlay">
+            <h3>Coffee Mocha</h3>
+          </div>
+        </div>
+        <div class="image-container-two h">
+          <div class="image-overlay">
+            <h3>Expresso Americano</h3>
+          </div>
+        </div>
+        <div class="image-container-three h">
+          <div class="image-overlay">
+            <h3>Cappuccino</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fresh -->
+    <!-- Milk Shake -->
+    <div class="Milk p-5">
+      <h2>Various Milk Shake</h2>
+      <div class="image-gallery-container p-5">
+        <div class="image-gallery p-5">
+          <div class="image-item">
+            <img src="img/Vanila Special.webp" alt="Image 1" />
+          </div>
+          <div class="image-item">
+            <img src="img/Blueberry.webp" alt="Image 2" />
+          </div>
+          <div class="image-item">
+            <img src="img/cool mint.webp" alt="Image 3" />
+          </div>
+          <div class="image-item">
+            <img src="img/Pina Colada.webp" alt="Image 4" />
+          </div>
+          <div class="image-item">
+            <img src="img/Rasphberry.webp" alt="Image 5" />
+          </div>
+          <div class="image-item">
+            <img src="img/Strawberry.webp" alt="Image 6" />
+          </div>
+          <div class="image-item">
+            <img src="img/Triple Nut.webp" alt="Image 7" />
+          </div>
+          <div class="image-item">
+            <img src="img/Neapolitan.webp" alt="Image 8" />
+          </div>
+          <div class="image-item">
+            <img src="img/Choc Malt.webp" alt="Image 9" />
+          </div>
+          <div class="image-item">
+            <img src="img/Apple Pie.webp" alt="Image 10" />
+          </div>
+        </div>
+        <div class="image-controls">
+          <button class="image-prev"><</button>
+          <button class="image-next">></button>
+        </div>
+      </div>
+    </div>
+    <!-- Milk Shake -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
